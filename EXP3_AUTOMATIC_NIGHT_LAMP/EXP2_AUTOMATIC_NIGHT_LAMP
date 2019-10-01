@@ -1,0 +1,28 @@
+EXP2_AUTOMATIC_NIGHT_LAMP
+
+THEORY: 
+As per the circuit diagram, we have made a voltage divider circuit using LDR and 10k resistor. The voltage divider output is feed to
+the analog pin of the Arduino. 
+The analog Pin senses the voltage and gives some analog value to Arduino. The analog value changes according to the resistance of LDR.
+So, as the light falls on the LDR the resistance of it get decreased and hence the voltage value increase.
+
+Intensity of light ↓ - Resistance↑ - Voltage at analog pin↓ - Light turns ON
+
+
+LEARNING AND OBSERVATIONS:
+As per the Arduino code, if the analog value falls below 400 we consider it as dark and the light turns ON. If the value comes above 400 
+we consider it as bright and the light turns OFF. 
+
+
+PROBLEMS AND TROUBLESHOOTING: 
+You should take care whether the board in the arduino\uno or not and also selection of port in tools. This is the main problem where we
+get confusion 
+
+PRECAUTIONS: 
+While installing led’s in bread board we should take care whether the ’n’ terminals of LDR is connected or not.Here the ‘n’ terminals 
+should be connected similarly, we should check whether the ‘p’ terminals are connected or not.In this case ‘p’ terminals should not be
+connected . 
+Install the wires properly in both bread board and arduino board.  
+
+LEARNING OUTCOMES: 
+With this experiment we can learn that how LED start glowing when its dark and LED is off when its in sunlight.
